@@ -11,7 +11,9 @@
 |
 */
 
-Route::get('/', function () {
+Route::redirect('/', '/app');
+
+Route::get('/welcome', function () {
     return view('welcome');
 });
 
